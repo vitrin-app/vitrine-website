@@ -1,0 +1,355 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background: black;
+  color: white;
+  min-height: 100vh;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+button, a.btn {
+  font-family: SF Pro;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 356px;
+  margin: 16px 24px;
+  padding: none;
+  font-size: 13px;
+  text-decoration: none;
+  border-radius: 10px;
+  background: rgba(42, 42, 42, .45);
+  color: white;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  backdrop-filter: saturate(115%) blur(30px);
+  transition: background .15s;
+}
+
+button:hover, a.btn:hover {
+  background: rgba(61, 61, 61, .45);
+}
+
+.background {
+  z-index: -1;
+  overflow: hidden;
+  opacity: .4;
+  position: absolute;
+  top: 0;
+  bottom: -64px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background div {
+  position: absolute;
+}
+
+.background div.outer-holder {
+  opacity: .5;
+  animation: rotate-left 500s linear infinite;
+}
+
+.background div.mid-holder {
+  opacity: .75;
+  animation: rotate-right 400s linear infinite;
+}
+
+.background div.inner-holder {
+  animation: rotate-left 200s linear infinite;
+}
+
+.background img {
+  opacity: .5;
+}
+
+.background img.inner {
+  animation: pulse 20s .7s infinite;
+}
+
+.background img.mid {
+  animation: pulse 20s .85s infinite;
+}
+
+.background img.outer {
+  animation: pulse 20s 1s infinite;
+}
+
+@keyframes rotate-left {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: .5;
+    transform: scale(1);
+  }
+  2% {
+    opacity: 1;
+  }
+  8% {
+    opacity: .5;
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.content .section {
+  width: 50%;
+  position: relative;
+}
+
+.logo {
+  display: block;
+  width: 244px;
+}
+
+.logo.light {
+  display: none;
+}
+
+.content .section.video {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 64px;
+  width: calc(50% - 64px);
+}
+
+.content .section.texts {
+  padding-top: 32px;
+}
+
+.content p {
+  margin: 48px 24px;
+  max-width: 356px;
+  text-align: justify;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.frame {
+  width: 320px;
+  position: absolute;
+  right: 52px;
+  top: -20px;
+}
+
+.video-holder {
+  width: 300px;
+  height: 590px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ui-elements {
+  position: absolute;
+  right: 76px;
+  width: 272px;
+  height: 589px;
+  border-radius: 27px;
+  overflow: hidden;
+  font-family: SF Pro;
+}
+
+.ui-elements > div {
+  position: absolute;
+}
+
+.ui-elements .glass {
+  color: white;
+  background: rgba(42, 42, 42, .45);
+  backdrop-filter: saturate(115%) blur(30px);
+}
+
+
+.ui-elements .btn {
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.ui-elements .share-btn {
+  width: 40px;
+  height: 40px;
+  top: 42px;
+  right: 8px;
+  border-radius: 8px;
+}
+
+.ui-elements .contact-btn {
+  bottom: 92px;
+  left: 8px;
+  right: 8px;
+  height: 44px;
+}
+
+.ui-elements .bottom-nav {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+}
+
+.ui-elements .bottom-nav .nav {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 8px;
+  font-weight: 400;
+  opacity: .35;
+}
+
+.ui-elements .bottom-nav .nav i {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.ui-elements .bottom-nav .nav.nav-submit {
+  opacity: 1;
+}
+
+.ui-elements .iphone-bar {
+  width: 156px;
+  height: 3px;
+  background: white;
+  bottom: 8px;
+  border-radius: 3px;
+  left: 50%;
+  margin-left: -78px;
+}
+
+.footer {
+  margin-top: 128px;
+  margin-left: 16px;
+  font-size: 11px;
+}
+
+.footer.mobile {
+  display: none;
+}
+
+.footer a {
+  margin: 0 16px;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .background {
+    opacity: .1;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo.light {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .background {
+    padding-top: 256px;
+    bottom: -512px;
+  }
+
+  .content {
+    display: block;
+    width: 100%;
+  }
+
+  .logo {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  button, a.btn {
+    width: auto;
+    display: flex;
+  }
+
+  .content .section {
+    width: 100%;
+  }
+
+  .content .section p:last-of-type {
+    display: none;
+  }
+
+  .content .section.video {
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 96px;
+    margin-bottom: 96px;
+  }
+
+  .content .section.video .frame {
+    right: auto;
+  }
+
+  .content .section.video .ui-elements {
+    right: auto;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .footer.mobile {
+    display: block;
+    margin-top: -128px;
+    margin-bottom: 128px;
+  }
+}
