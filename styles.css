@@ -280,6 +280,7 @@ button:hover, a.btn:hover {
 .ui-elements .title-card {
   margin-top: 42px;
   margin-left: 8px;
+  color: white;
 }
 
 .ui-elements .title-card h1, h2, small {
