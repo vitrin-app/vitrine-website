@@ -25,36 +25,44 @@
       <div class="section texts">
         <img class="logo" src="./assets/logo-type-dark.svg"/>
         <img class="logo light" src="./assets/logo-type.svg"/>
+        <i>Show, don't tell.</i>
         <p>
         Looking for a new room mate? Want to sell off your old Mac Book? Snap a quick video and post it on Vitrine. Let people see what you have to offer.
-        <br>
-        <i>Show, don't tell.</i>
         </p>
         <p>
         Looking for a new flat, a new laptop or a new phone? Find it all on Vitrine, where you can see what you'd get before having to negotiate.
         </p>
         <a class="btn" href="https://www.apple.com/app-store/">
-          􀣺 App Store
+          <img class="icon" src="./assets/icons/apple.svg"/> App Store
         </a>
         <div class="footer">
           <a>Contact Us</a> | <a>About</a> | <a>Terms & Conditions</a>
         </div>
       </div>
-      <div class="section video">
+      <div class="section video not-loaded">
         <div class="video-holder">
-          <video height="590px" autoplay="true" muted="true" loop="true">
+          <div class="loading">
+            <img src="./assets/logo-dark-colored.svg"/>
+          </div>
+          <video height="590px" autoplay muted playsinline loop onloadeddata="document.querySelector('.section.video').classList.remove('not-loaded')">
             <source src="https://chat.divarcdn.com/189877fe-07d9-11ec-9d22-0a7b46e55ee4.mp4" type="video/mp4"/>
           </video>
         </div>
         <img class="frame" src="./assets/frame-full.png"/>
         <div class="ui-elements">
-          <div class="btn share-btn glass">􀈂</div>
-          <div class="glass bottom-nav">
-            <div class="nav nav-loc"><i>􀋑</i> Location</div>
-            <div class="nav nav-submit"><i>􀏈</i> Submit</div>
-            <div class="nav nav-profile"><i>􀉩</i> Profile</div>
+          <div class="title-card">
+            <h2>Keyboard</h2>
+            <h1>€780</h1>
+            <small>Posted 15 minutes ago</small>
+            <small>Sendlinger Tor, München</small>
           </div>
-          <div class="btn contact-btn glass">􀌾 Contact</div>
+          <div class="btn share-btn glass"><img class="icon" src="./assets/icons/share.svg"/></div>
+          <div class="glass bottom-nav">
+            <div class="nav nav-loc"><img class="icon" src="./assets/icons/location.svg"/>Location</div>
+            <div class="nav nav-submit"><img class="icon" src="./assets/icons/add.svg"/>Submit</div>
+            <div class="nav nav-profile"><img class="icon" src="./assets/icons/person.svg"/> Profile</div>
+          </div>
+          <div class="btn contact-btn glass"><img class="icon" src="./assets/icons/phone.svg"/> Contact</div>
           <div class="iphone-bar"></div>
         </div>
       </div>

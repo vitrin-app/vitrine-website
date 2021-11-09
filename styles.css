@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Sanfran';
+  src: url(./font/SF-Pro.ttf);
+}
+
+
 body, html {
   padding: 0;
   margin: 0;
@@ -12,7 +18,7 @@ body {
 }
 
 button, a.btn {
-  font-family: SF Pro;
+  font-family: SF Pro, 'Sanfran';
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -25,13 +31,20 @@ button, a.btn {
   background: rgba(42, 42, 42, .45);
   color: white;
   height: 44px;
-  border: 1px solid rgba(255, 255, 255, .25);
+  border: .5px inset rgba(255, 255, 255, .25);
   backdrop-filter: saturate(115%) blur(30px);
+  -webkit-backdrop-filter: saturate(115%) blur(30px);
   transition: background .15s;
 }
 
 button:hover, a.btn:hover {
   background: rgba(61, 61, 61, .45);
+}
+
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  width: 24px;
 }
 
 .background {
@@ -165,6 +178,13 @@ button:hover, a.btn:hover {
   font-size: 14px;
 }
 
+.content i {
+  font-size: 24px;
+  display: block;
+  margin: 16px 24px;
+  font-style: normal;
+}
+
 .frame {
   width: 320px;
   position: absolute;
@@ -175,9 +195,42 @@ button:hover, a.btn:hover {
 .video-holder {
   width: 300px;
   height: 590px;
+  background: black;
   border-radius: 16px;
   overflow: hidden;
   position: relative;
+}
+
+.video-holder .loading {
+  display: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -48px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  animation: loading 3s infinite;
+}
+
+.not-loaded .video-holder .loading {
+  display: block;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+
+.video-holder .loading img {
+  width: 96px;
+  height: 96px;
 }
 
 .ui-elements {
@@ -187,7 +240,7 @@ button:hover, a.btn:hover {
   height: 589px;
   border-radius: 27px;
   overflow: hidden;
-  font-family: SF Pro;
+  font-family: SF Pro, 'Sanfran';
 }
 
 .ui-elements > div {
@@ -198,16 +251,22 @@ button:hover, a.btn:hover {
   color: white;
   background: rgba(42, 42, 42, .45);
   backdrop-filter: saturate(115%) blur(30px);
+  -webkit-backdrop-filter: saturate(115%) blur(30px);
 }
 
 
 .ui-elements .btn {
-  border: 1px solid rgba(255, 255, 255, .25);
+  border: .5px inset rgba(255, 255, 255, .25);
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 13px;
+}
+
+.not-loaded .ui-elements .btn,
+.not-loaded .ui-elements .title-card {
+  display: none;
 }
 
 .ui-elements .share-btn {
@@ -216,6 +275,32 @@ button:hover, a.btn:hover {
   top: 42px;
   right: 8px;
   border-radius: 8px;
+}
+
+.ui-elements .title-card {
+  margin-top: 42px;
+  margin-left: 8px;
+}
+
+.ui-elements .title-card h1, h2, small {
+  display: block;
+  margin: 0;
+}
+
+.ui-elements .title-card h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.ui-elements .title-card h1 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.ui-elements .title-card small {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
 }
 
 .ui-elements .contact-btn {
@@ -231,6 +316,8 @@ button:hover, a.btn:hover {
   right: 0;
   height: 80px;
   display: flex;
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
 }
 
 .ui-elements .bottom-nav .nav {
@@ -242,11 +329,10 @@ button:hover, a.btn:hover {
   opacity: .35;
 }
 
-.ui-elements .bottom-nav .nav i {
+.ui-elements .bottom-nav .nav img {
   display: block;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 400;
+  margin: 0 auto;
+  width: 32px;
   margin-bottom: 4px;
 }
 
