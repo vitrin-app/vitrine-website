@@ -394,6 +394,10 @@ button:hover, a.btn:hover {
     width: 100%;
   }
 
+  .content i {
+    text-align: center;
+  }
+
   .logo {
     width: 200px;
     margin: 0 auto;
