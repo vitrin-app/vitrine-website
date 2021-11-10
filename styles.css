@@ -17,6 +17,11 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 button, a.btn {
   font-family: SF Pro, 'Sanfran';
   display: inline-flex;
@@ -352,9 +357,18 @@ button:hover, a.btn:hover {
 }
 
 .footer {
-  margin-top: 128px;
+  margin-top: 80px;
   margin-left: 16px;
   font-size: 11px;
+}
+
+.footer.everywhere {
+  margin-left: 0px;
+}
+
+.footer.everywhere a:first-child,
+.footer.everywhere a:last-child {
+  margin-left: 0px;
 }
 
 .footer.mobile {
@@ -363,6 +377,14 @@ button:hover, a.btn:hover {
 
 .footer a {
   margin: 0 16px;
+}
+
+
+.legal-content {
+  max-width: 768px;
+  margin: 0 auto;
+  font-size: 13px;
+  text-align: justify;
 }
 
 @media (prefers-color-scheme: light) {
@@ -438,9 +460,19 @@ button:hover, a.btn:hover {
     display: none;
   }
 
+  .footer.everywhere {
+    display: block;
+    margin-bottom: 128px;
+    margin-top: 8px;
+  }
+
   .footer.mobile {
     display: block;
     margin-top: -128px;
     margin-bottom: 128px;
+  }
+
+  .legal-content {
+    margin: 0 24px;
   }
 }
