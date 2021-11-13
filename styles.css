@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+a.link {
+  color: #0084FF;
+}
+
 button, a.btn {
   font-family: SF Pro, 'Sanfran';
   display: inline-flex;
@@ -150,6 +154,11 @@ button:hover, a.btn:hover {
   padding-bottom: 128px;
 }
 
+.content.small {
+  max-width: 768px;
+  display: block;
+}
+
 .content .section {
   width: 50%;
   position: relative;
@@ -183,11 +192,21 @@ button:hover, a.btn:hover {
   font-size: 14px;
 }
 
+.content.small p {
+  max-width: none;
+}
+
 .content i {
   font-size: 24px;
   display: block;
   margin: 16px 24px;
   font-style: normal;
+}
+
+.content b {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .frame {
@@ -378,7 +397,6 @@ button:hover, a.btn:hover {
 .footer a {
   margin: 0 16px;
 }
-
 
 .legal-content {
   max-width: 768px;
