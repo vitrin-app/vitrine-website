@@ -336,43 +336,35 @@ button:hover, a.btn:hover {
 }
 
 .ui-elements .bottom-nav {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
+  bottom: 24px;
+  left: 8px;
+  right: 8px;
+  height: 52px;
   display: flex;
-  border-bottom-left-radius: 27px;
-  border-bottom-right-radius: 27px;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, .15);
+  border-radius: 12px;
 }
 
 .ui-elements .bottom-nav .nav {
   flex-grow: 1;
   text-align: center;
-  font-size: 10px;
-  margin-top: 8px;
+  font-size: 8px;
   font-weight: 400;
-  opacity: .35;
 }
 
 .ui-elements .bottom-nav .nav img {
   display: block;
   margin: 0 auto;
-  width: 32px;
-  margin-bottom: 4px;
+  width: 24px;
 }
 
-.ui-elements .bottom-nav .nav.nav-submit {
-  opacity: 1;
-}
-
-.ui-elements .iphone-bar {
-  width: 156px;
-  height: 3px;
-  background: white;
-  bottom: 8px;
-  border-radius: 3px;
-  left: 50%;
-  margin-left: -78px;
+.ui-elements .bottom-nav hr {
+  display: block;
+  height: 28px;
+  width: 1px;
+  border: none;
+  background: rgba(255, 255, 255, .15);
 }
 
 .footer {
