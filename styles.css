@@ -217,10 +217,10 @@ button:hover, a.btn:hover {
 }
 
 .video-holder {
-  width: 300px;
+  width: 288px;
   height: 590px;
   background: black;
-  border-radius: 16px;
+  border-radius: 40px;
   overflow: hidden;
   position: relative;
 }
@@ -315,6 +315,7 @@ button:hover, a.btn:hover {
 .ui-elements .title-card h2 {
   font-size: 20px;
   font-weight: 400;
+  max-width: 192px;
 }
 
 .ui-elements .title-card h1 {

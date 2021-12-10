@@ -58,17 +58,17 @@
           <div class="loading">
             <img src="./assets/logo-dark-colored.svg"/>
           </div>
-          <video height="590px" autoplay muted playsinline loop onloadeddata="document.querySelector('.section.video').classList.remove('not-loaded')">
-            <source src="https://chat.divarcdn.com/189877fe-07d9-11ec-9d22-0a7b46e55ee4.mp4" type="video/mp4"/>
+          <video id="video" height="590px" autoplay muted playsinline loop onloadeddata="document.querySelector('.section.video').classList.remove('not-loaded')">
+            <source id="source" src="https://chat.divarcdn.com/189877fe-07d9-11ec-9d22-0a7b46e55ee4.mp4" type="video/mp4"/>
           </video>
         </div>
         <img class="frame" src="./assets/frame-full.png"/>
         <div class="ui-elements">
           <div class="title-card">
-            <h2>Keyboard</h2>
-            <h1>€780</h1>
-            <small>Posted 15 minutes ago</small>
-            <small>Sendlinger Tor, München</small>
+            <h2 id="title">Keyboard</h2>
+            <h1 id="price">€780</h1>
+            <small id="time">Posted 15 minutes ago</small>
+            <small id="location">Sendlinger Tor, München</small>
           </div>
           <div class="btn share-btn glass"><img class="icon" src="./assets/icons/share.svg"/></div>
           <div class="glass bottom-nav">
@@ -88,5 +88,6 @@
       <br>
       <a href="https://vitrin.cloud">Copyright © 2021 Vitrine App</a>
     </div>
+    <script src="./fetch.js" type="text/javascript"></script>
   </body>
 </html>
