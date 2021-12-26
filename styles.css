@@ -192,6 +192,10 @@ button:hover, a.btn:hover {
   font-size: 14px;
 }
 
+.content h3 {
+  margin: 0 24px;
+}
+
 .content.small p {
   max-width: none;
 }
