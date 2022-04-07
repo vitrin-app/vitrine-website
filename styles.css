@@ -17,6 +17,11 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+body.iphone .no-iphone,
+body.android .no-android {
+  display: none !important;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -40,7 +45,7 @@ button, a.btn {
   background: rgba(42, 42, 42, .45);
   color: white;
   height: 44px;
-  border: .5px inset rgba(255, 255, 255, .25);
+  border: .5px solid rgba(255, 255, 255, .25);
   backdrop-filter: saturate(115%) blur(30px);
   -webkit-backdrop-filter: saturate(115%) blur(30px);
   transition: background .15s;
@@ -48,6 +53,21 @@ button, a.btn {
 
 button:hover, a.btn:hover {
   background: rgba(61, 61, 61, .45);
+}
+
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 356px;
+  margin: 0 24px;
+  gap: 8px;
+}
+
+.btn-row button, .btn-row a.btn {
+  width: auto;
+  margin: 0;
+  flex-grow: 1;
 }
 
 .icon {
@@ -329,7 +349,7 @@ button:hover, a.btn:hover {
 
 .ui-elements .title-card small {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 16px;
 }
 
@@ -444,6 +464,10 @@ button:hover, a.btn:hover {
   button, a.btn {
     width: auto;
     display: flex;
+  }
+
+  .btn-row {
+    width: auto;
   }
 
   .content .section {
