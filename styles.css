@@ -55,7 +55,8 @@ button, a.btn {
 
 button.secondary, a.btn.secondary {
   background: none;
-  opacity: .5;
+  border: none;
+  opacity: .75;
   transition: opacity .15s;
 }
 
@@ -66,7 +67,6 @@ button:hover, a.btn:hover {
 button.secondary:hover,
 a.btn.secondary:hover {
   background: none;
-  opacity: 1;
 }
 
 .btn-row {
@@ -440,6 +440,14 @@ a.btn.secondary:hover {
   body {
     background: #fff;
     color: #000;
+  }
+
+  button.secondary, .btn.secondary {
+    color: #424242;
+  }
+
+  button.secondary img.icon, .btn.secondary img.icon {
+    filter: invert(100%);
   }
 
   .background {
