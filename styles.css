@@ -18,7 +18,9 @@ body {
 }
 
 body.iphone .no-iphone,
-body.android .no-android {
+body.android .no-android, 
+body:not(.iphone) .just-iphone,
+body:not(.android) .just-android {
   display: none !important;
 }
 
@@ -51,8 +53,20 @@ button, a.btn {
   transition: background .15s;
 }
 
+button.secondary, a.btn.secondary {
+  background: none;
+  opacity: .5;
+  transition: opacity .15s;
+}
+
 button:hover, a.btn:hover {
   background: rgba(61, 61, 61, .45);
+}
+
+button.secondary:hover,
+a.btn.secondary:hover {
+  background: none;
+  opacity: 1;
 }
 
 .btn-row {
@@ -468,6 +482,12 @@ button:hover, a.btn:hover {
 
   .btn-row {
     width: auto;
+    flex-direction: column;
+  }
+
+  .btn-row button,
+  .btn-row a.btn {
+    width: 100%;
   }
 
   .content .section {
