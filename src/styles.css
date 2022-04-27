@@ -25,12 +25,12 @@ body:not(.android) .just-android {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: #0084FF;
 }
 
-a.link {
-  color: #0084FF;
+.footer a {
+  color: inherit;
 }
 
 button, a.btn {
@@ -203,8 +203,25 @@ a.btn.secondary:hover {
   width: 244px;
 }
 
-.logo.light {
+img.dark {
+  display: block;
+}
+
+img.light {
   display: none;
+}
+
+img.filler {
+  width: 100%
+}
+
+code {
+  color: #9e9e9e;
+  background: #111111;
+  padding: 8px;
+  margin: 8px 24px;
+  border-radius: 2px;
+  display: block;
 }
 
 .content .section.video {
@@ -458,8 +475,12 @@ a.btn.secondary:hover {
     display: none;
   }
 
-  .logo.light {
+  img.light {
     display: block;
+  }
+
+  img.dark {
+    display: none;
   }
 }
 
