@@ -1,0 +1,24 @@
+{
+  "name": "vitrine-website",
+  "version": "1.0.0",
+  "description": "The website for Vitrine app",
+  "main": "device.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitrin-app/vitrine-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitrin-app/vitrine-website/issues"
+  },
+  "homepage": "https://github.com/vitrin-app/vitrine-website#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
