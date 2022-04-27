@@ -9,6 +9,7 @@ module.exports = config => {
     'json',
     'png',
     'svg',
+    'ttf',
   ])
 
   return {

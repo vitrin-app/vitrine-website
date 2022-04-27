@@ -21,6 +21,9 @@ jobs:
         - name: build
           run: npm run build
 
+        - name: NO JEKYLL!
+          run: touch .nojekyll
+
         - name: deploy
           uses: peaceiris/actions-gh-pages@v3
           with:
