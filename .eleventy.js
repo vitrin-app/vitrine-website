@@ -1,6 +1,5 @@
 module.exports = config => {
-  config.addPassthroughCopy('font')
-  config.addPassthroughCopy('assets')
+  config.addPassthroughCopy('src/CNAME')
   config.setTemplateFormats([
     'html',
     'md',
