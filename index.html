@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vitrine: Video Recommerce for Students</title>
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Video classifieds. See it before you buy it."
+    />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="background">
+      <div class="inner-holder">
+      <img class="inner" src="/assets/inner-ring.svg"/>
+      </div>
+      <div class="mid-holder">
+      <img class="mid" src="/assets/mid-ring.svg"/>
+      </div>
+      <div class="outer-holder">
+      <img class="outer" src="/assets/outer-ring.svg"/>
+      </div>
+    </div>
+
+    
+<div class="content">
+  <div class="section texts">
+    <img class="logo" src="/assets/logo-type-dark.svg"/>
+    <img class="logo light" src="/assets/logo-type.svg"/>
+    <i>Video Recommerce for Students</i>
+    <p>
+    Have an old macbook you want to get rid off? Post a quick video on Vitrine to get it to a classmate who can use it. Looking for some hiking shoes? Check Vitrine to see if a fellow student has
+    some spares.
+    </p>
+    <p>
+    <b>A Safe Environment</b>
+    Only students and academics can post on Vitrine. You can either post privately, which means
+    only fellow students and academics can contact you regarding it, or you can post publicly, if you so choose, allowing anyone to contact you.
+    <a href="/community">Learn more about our community.</a>
+    </p>
+    <div class="btn-row">
+      <a class="btn no-android" href="https://apps.apple.com/us/app/vitrine/id1604353794">
+        <img class="icon" src="/assets/icons/apple.svg"/> App Store
+      </a>
+      <a class="btn no-iphone" href="https://play.google.com/store/apps/details?id=cloud.vitrin">
+        <img class="icon" src="/assets/icons/google-play.svg"/> Google Play
+      </a>
+
+      <a class="btn secondary just-android" href="https://apps.apple.com/us/app/vitrine/id1604353794">
+        Also on <img class="icon" src="/assets/icons/apple.svg"/> App Store
+      </a>
+      <a class="btn secondary just-iphone" href="https://play.google.com/store/apps/details?id=cloud.vitrin">
+        Also on <img class="icon" src="/assets/icons/google-play.svg"/> Google Play
+      </a>
+  </div>
+    <div class="footer">
+      <a href="mailto:support@vitrine.cloud">Support</a>
+      | <a href="/privacy">Privacy</a> | <a href="/terms">Terms of Use</a>
+      <br>
+      <a href="https://vitrine.cloud">Copyright © 2021 Vitrine App</a>
+    </div>
+  </div>
+  <div class="section video not-loaded">
+    <div class="video-holder">
+      <div class="loading">
+        <img src="/assets/logo-dark-colored.svg"/>
+      </div>
+      <video id="video" height="590px" autoplay muted playsinline loop onloadeddata="document.querySelector('.section.video').classList.remove('not-loaded')">
+        <source id="source" src="https://chat.divarcdn.com/189877fe-07d9-11ec-9d22-0a7b46e55ee4.mp4" type="video/mp4"/>
+      </video>
+    </div>
+    <img class="frame" src="./assets/frame-full.png"/>
+    <div class="ui-elements">
+      <div class="title-card">
+        <h2 id="title">Keyboard</h2>
+        <h1 id="price">€780</h1>
+        <small id="time">Posted 15 minutes ago</small>
+        <small id="location">Sendlinger Tor, München</small>
+      </div>
+      <div class="btn share-btn glass"><img class="icon" src="/assets/icons/share.svg"/></div>
+      <div class="glass bottom-nav">
+        <div class="nav nav-loc"><img class="icon" src="/assets/icons/location.svg"/>Location</div>
+        <hr/>
+        <div class="nav nav-submit"><img class="icon" src="/assets/icons/add.svg"/>Submit</div>
+        <hr/>
+        <div class="nav nav-profile"><img class="icon" src="/assets/icons/person.svg"/> Profile</div>
+      </div>
+      <div class="btn contact-btn glass"><img class="icon" src="/assets/icons/phone.svg"/> Contact</div>
+    </div>
+  </div>
+</div>
+<div class="footer mobile">
+  <a href="mailto:support@vitrine.cloud">Support</a>
+  | <a href="/privacy">Privacy</a> | <a href="/terms">Terms of Use</a>
+  <br>
+  <a href="https://vitrine.cloud">Copyright © 2021 Vitrine App</a>
+</div>
+
+<script src="/device.js" type="text/javascript"></script>
+<script src="/fetch.js" type="text/javascript"></script>
+
+  </body>
+</html>
