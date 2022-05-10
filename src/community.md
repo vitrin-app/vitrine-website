@@ -12,7 +12,7 @@ title: Vitrine | A Safe Environment
 </a>
 <i>A Safe Environemnt</i>
 
-Vitrine is a place of trade and exchange for students, so you need an academic email to be able to 
+Vitrine is a safe and trustworthy place of trade and exchange for students, so you need an academic email to be able to 
 post listings or contact private listings:
 
 ```
@@ -21,9 +21,9 @@ post listings or contact private listings:
 - jane.doe@cs.usc.edu
 ```
 
-We cover most universities across the globe, but if your
-university or academic institute is not covered, send us an email at [support@vitrine.cloud](mailto:support@vitrine.cloud)
-and we will get you covered!
+We already support most universities across the globe, but if your
+university or academic institute is missing, send us an email at [support@vitrine.cloud](mailto:support@vitrine.cloud)
+and we will gladly get you covered!
 
 Only members can post videos to Vitrine. If you are a member (you have a university email), you can
 choose to post privately, which means only other members will be able to access your contact information.
