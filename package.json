@@ -20,5 +20,10 @@
   "homepage": "https://github.com/vitrin-app/vitrine-website#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1"
+  },
+  "dependencies": {
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.4",
+    "slugify": "^1.6.5"
   }
 }
