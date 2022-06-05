@@ -453,6 +453,13 @@ code {
   text-align: justify;
 }
 
+.legal-content h1,
+.legal-content h2,
+.legal-content h3,
+.legal-content h4 {
+  text-align: left;
+}
+
 @media (prefers-color-scheme: light) {
   body {
     background: #fff;
