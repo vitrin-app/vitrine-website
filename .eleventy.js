@@ -13,6 +13,7 @@ module.exports = config => {
     'png',
     'svg',
     'ttf',
+    'txt',
   ])
 
   config.setLibrary('md', md({
